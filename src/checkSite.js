@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const web = require('selenium-webdriver');
 const { notify } = require('./notify');
 
@@ -19,10 +20,14 @@ const checkSite = async (site, driver) => {
   try {
     const value = await driver.findElement(web.By.xpath(xPath)).getText();
     if (!isMatch(String(value), expected)) {
+      console.log(chalk.black.bgGreen(description, '-', value, '-', url));
       await notify({ site, message: `${description} was expecting "${expected}" but got "${value}"` });
+    } else {
+      console.log(chalk.black.bgRed(description, '-', value, '-', url));
     }
   } catch (e) {
     await notify({ site, message: `${description} could not reach the node specified` });
+    throw new Error(e);
   }
 };
 
