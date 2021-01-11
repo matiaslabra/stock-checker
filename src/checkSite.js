@@ -26,8 +26,8 @@ const checkSite = async (site, driver) => {
       console.log(chalk.black.bgRed(description, '-', value, '-', url));
     }
   } catch (e) {
+    console.log(chalk.black.bgCyan('Could not reach', url));
     await notify({ site, message: `${description} could not reach the node specified` });
-    throw new Error(e);
   }
 };
 

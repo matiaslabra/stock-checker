@@ -7,6 +7,9 @@ I wrote a [blog post](https://jaydlawrence.dev/check-if-items-are-in-stock-onlin
 https://jaydlawrence.dev/check-if-items-are-in-stock-online-for-free/
 
 ## Setup
+## TODO
+- [ ] Update README
+- [ ] Improve logging
 
 ### Sites
 
