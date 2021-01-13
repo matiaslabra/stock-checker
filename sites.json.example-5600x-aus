@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.computeralliance.com.au/amd-am4-ryzen-5-5600x-6-core-4.6ghz-cpu-100-100000065box",
+    "xPath": "//*[@id=\"main\"]/div[6]/div[1]/div[2]/div[2]/div/ul/li[1]/a",
+    "expected": "Out of Stock",
+    "description": "CA - 5600x"
+  },
+  {
+    "url": "https://wellstechnology.com.au/products/amd-ryzen-5-5600x-cpu?_pos=1&_sid=8713ee2be&_ss=r&variant=36941063422118",
+    "xPath": "//*[@id=\"addToCartText-product-template\"]",
+    "expected": ["Sold Out", "SOLD OUT"],
+    "description": "Well - 5600x"
+  },
+  {
+    "url": "https://www.newegg.com/global/au-en/amd-ryzen-5-5600x/p/N82E16819113666?Item=N82E16819113666",
+    "xPath": "//*[@id=\"app\"]/div[2]/div[1]/div/div/div[2]/div[1]/div[5]/div[5]/div/strong",
+    "expected": "OUT OF STOCK.",
+    "description": "NE - 5600x"
+  }
+]
